@@ -270,6 +270,7 @@ def execute_drop(item_id):
         if item["id"] == item_id:
             inventory.remove(item)
             current_room["items"].append(item)
+            return
        
     print("You cannot drop that.")
 
